@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Chappelle Page</title>
-  <link rel='stylesheet' href='bower_components/normalize.css/normalize.css'>
-  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  <link rel='stylesheet' href='css/main.css'>
+  <title>Etsy API</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
+
 <header>
 <div class='headerWrap'>
   <div class='etsyLogo'>Etsy</div>
@@ -143,26 +142,26 @@
 
 
 <div class='container'>
-<script type='text/template' id='itemTemplate'>
-<div class='itemList'>
-  <div class='imageTag'>
-    <a href='#'><img src='<%= Images[0].url_170x135 %>'></a>
-  </div>
-  <div class='icons'>
-      <a href='#'><img src='images/heart.png'></a>
-      <a href='#'><img src='images/hamburger.png'></a>
-  </div>
-  <div class='title'>
-    <p><%= title %></p>
-  </div>
-  <div class='shop'>
-    <p><a href='#'><%= Shop.shop_name %></a></p>
-  </div>
-  <div class='pricing'>
-    <p>$<%= price %><%= currency_code %></p>
-  </div>
-</div>
-</script>
+ <script type='text/template' id='itemTemplate'>
+// <div class='itemList'>
+//   <div class='imageTag'>
+//     <a href='#'><img src='<%= Images[0].url_170x135 %>'></a>
+//   </div>
+//   <div class='icons'>
+//       <a href='#'><img src='images/heart.png'></a>
+//       <a href='#'><img src='images/hamburger.png'></a>
+//   </div>
+//   <div class='title'>
+//     <p><%= title %></p>
+//   </div>
+//   <div class='shop'>
+//     <p><a href='#'><%= Shop.shop_name %></a></p>
+//   </div>
+//   <div class='pricing'>
+//     <p>$<%= price %><%= currency_code %></p>
+//   </div>
+// </div>
+// </script>
 </div>
 
 <footer>
@@ -188,10 +187,7 @@
 </div>
 </footer>
 
-  <script src="bower_components/underscore/underscore-min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
- 
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 </html>

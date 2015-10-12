@@ -1,3 +1,3 @@
-## This is a Readme
+## Using Etsy's API 
 
-> You should probably update me.
+#### Pulling Data from Etsy API
