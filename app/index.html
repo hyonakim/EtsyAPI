@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Chappelle Page</title>
+  <link rel='stylesheet' href='bower_components/normalize.css/normalize.css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='css/main.css'>
+</head>
+
+<body>
+<header>
+<div class='headerWrap'>
+  <div class='etsyLogo'>Etsy</div>
+  <form class='searchBar'>
+    <input type='search' placeholder='Search for items or shops' class='searchField' />
+    <button class='searchbtn'>Search</button>
+  </form>
+
+  <nav class='navbar right'>
+    <ul>
+      <li><a href='#'>Sell on Etsy</a></li>
+      <li><a href='#'>Register</a></li>
+      <li><a href='#'><span>Sign in</span></a></li>
+      <div class='vertical'></div>
+      <div class='cart'><a href='#'><img src='images/cart.png' class='cartIcon'>Cart</a></div>
+    </ul>
+  </nav>
+</div>
+
+  <nav class='navbar center'>
+  <hr class='center'>
+    <ul>
+      <li><a href='#'>Clothing & Accessories</a></li>
+      <li><a href='#'>Jewelry</a></li>
+      <li><a href='#'>Craft Supplies & Tools</a></li>
+      <li><a href='#'>Weddings</a></li>
+      <li><a href='#'>Entertainment</a></li>
+      <li><a href='#'>Home & Living</a></li>
+      <li><a href='#'>Kids & Baby</a></li>
+      <li><a href='#'>Vintage</a></li>
+    </ul>
+    <hr>
+  </nav>
+</header>
+
+
+
+<aside class='columnLeft'>
+
+<h5 class='leftHeading'>Show results for:</h5>
+  <div class='leftSide Top'>
+  <ul>
+  <h5 class='heading5'>All Categories</h5>
+    <li><a href='#'>Home & Living</a></li>
+    <li><a href='#'>Art & Collectibles</a></li>
+    <li><a href='#'>Weddings</a></li>
+    <li><a href='#'>Clothing</a></li>
+    <li><a href='#'>Jewelry</a></li>
+    <li><a href='#'>Paper & Party Supplies</a></li>
+    <li><a href='#'>Accessories</a></li>
+    <li><a href='#'>Craft Supplies & Tools</a></li>
+    <li><a href='#'>Bags & Purses</a></li>
+    <li><a href='#'>Bath & Beauty</a></li>
+    <li><a href='#'>Shoes</a></li>
+    <li><a href='#'>Books, Movies & Music</a></li>
+    <li><a href='#'>Electronics & Accessories</a></li>
+    <li><a href='#'>Toys & Games</a></li>
+    <li><a href='#'>Pet Supplies</a></li>
+  </ul>
+  </div>
+
+
+<h5 class='leftHeading'>Refine your search</h5>
+
+<div class='leftSide Bottom'>
+  <div class='sideBottom'>
+
+    <h5 class='heading5'>Item Type</h5>
+      <form class='radioItems'>
+        <input type='radio' name='item' value='All Items'> 
+        <label>All Items</label></br>
+        <input type='radio' name='item' value='Handmade'>
+        <label>Handmade</label></br>
+        <input type='radio' name='item' value='Vintage'> 
+        <label>Vintage</label></br>
+      </form>
+
+    <hr class='sideLine'>
+
+    <h5 class='heading5'>Price</h5>
+      <form class='pricing'>
+        <input type='price' placeholder='$Low' class='priceBox'> to
+        <input type='price' placeholder='$High'class='priceBox'>
+        <button class='priceBtn'></button>
+      </form>
+
+    <hr class='sideLine'>
+
+      <h5 class='heading5'>Filter by Color</h5>
+        <button class='btnColor red'><a href='#'></a></button>
+        <button class='btnColor orange'><a href='#'></a></button>
+        <button class='btnColor yellow'><a href='#'></a></button>
+        <button class='btnColor green'><a href='#'></a></button>
+        <button class='btnColor skyblue'><a href='#'></a></button>
+        <button class='btnColor purple'><a href='#'></a></button>
+        <button class='btnColor black'><a href='#'></a></button>
+        <button class='btnColor white'><a href='#'></a></button>
+
+    <hr class='sideLine'>
+
+      <h5 class='heading5'>Ordering Options</h5>
+        <form class="order">
+          <input type='checkbox' name='ordering'><span>Accepts Etsy Gift Cards</span></br>
+          <input type='checkbox' name='ordering'><span>Customizable</span>
+        </form>
+
+    <hr class='sideLine'>
+
+      <h5 class='heading5'>Shop Location</h5>
+        <form class='shopLoc'>
+          <input type='radio' name='location' value='Anywhere'>
+          <span>Anywhere</span></br>
+          <input type='radio' name='location' value='United States'>
+          <span>United States</span></br>
+          <a href='#'>Choose a custom location</a>
+        </form>
+
+    <hr class='sideLine'>
+
+      <h5 class='heading5'>Ship To</h5>
+        <select class='shipTo'>
+          <div class='dropDown'>
+            <option value='US'>United States</option>
+            <option value='EU'></option>
+            <option value='Asia'>Asia</option>
+            <option value='South America'>South America</option>
+            <option value='Africa'>Africa</option>
+          </div>
+        </select>
+  </div>
+</div>
+</aside>
+
+
+<div class='container'>
+<script type='text/template' id='itemTemplate'>
+<div class='itemList'>
+  <div class='imageTag'>
+    <a href='#'><img src='<%= Images[0].url_170x135 %>'></a>
+  </div>
+  <div class='icons'>
+      <a href='#'><img src='images/heart.png'></a>
+      <a href='#'><img src='images/hamburger.png'></a>
+  </div>
+  <div class='title'>
+    <p><%= title %></p>
+  </div>
+  <div class='shop'>
+    <p><a href='#'><%= Shop.shop_name %></a></p>
+  </div>
+  <div class='pricing'>
+    <p>$<%= price %><%= currency_code %></p>
+  </div>
+</div>
+</script>
+</div>
+
+<footer>
+<div class='footArea'>
+
+<p>Looking for shops? <a href="#">davechappelle</a>,<a href="#">rickjames</a>,<a href="#">tyronebiggums</a></p>
+
+  <ul>
+    <li>&#60;</li>
+    <li class='selected'>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li class='selected'>...</li>
+    <li>250</li>
+    <li>&#62;</li>
+  </ul>
+
+</div>
+</footer>
+
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+ 
+  <script src="js/main.js"></script>
+
+</body>
+</html>

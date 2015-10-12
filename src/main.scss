@@ -1,0 +1,470 @@
+//Colors
+$grayColor: #626262;
+$orangeColor: #F56400;
+$turqColor: #0092B5;
+$whiteColor: #fff;
+$ltGray: #E1E3DF;
+
+//Fonts
+$font12: 12px;
+$font13: 13px;
+$font14: 14px;
+
+//Style
+$textDec: none;
+$lineHeight: 1.5;
+
+//Width of Containers
+$sideBar: 250px;
+
+
+body {
+  background: #F5F5F1;
+  line-height: $lineHeight;
+}
+
+//Header area for logo center nav and right nav with cart
+
+header {
+  position: relative;
+  background: $whiteColor;
+
+
+  
+  .headerWrap {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  hr {
+    height:0; 
+    border:0; 
+    border-top:1px solid $ltGray; 
+  }
+
+  .etsyLogo, 
+  .searchBar {
+    float: left;
+  }
+
+  .etsyLogo {
+    margin-left: 160px;
+    font-size: 32px;
+    font-family: 'Lora', serif;
+    color: $orangeColor;
+  }
+
+  .searchBar {
+    margin-left: 40px;
+    border: 1px solid $ltGray;
+    border-radius: 3px;
+  }
+
+  .searchField {
+    width: 250px;
+    padding: 9px;
+    border: none;
+    font-size: $font14;
+  }
+
+  .searchbtn {
+    float: right;
+    padding: 6px;
+    border: 1px solid #2E98B1;
+    background: $turqColor;
+    color: white;
+    font-size: $font14;
+  }
+
+  .navbar.right {
+    margin-right: 0;
+    position: relative;
+  }
+
+    .navbar.right ul {
+      margin: 0 0 0 270px;
+      padding: 0;
+      width: 20px;
+      display: inline;
+    }
+
+    .navbar.right ul li {
+      display: inline;
+      margin-right: 15px;
+      font-size: $font14;
+    }
+
+    .navbar.right ul li a {
+      text-decoration: $textDec;
+      color: $turqColor;
+    }
+
+    .navbar.right span {
+      border: 1px solid $turqColor;
+      border-radius: 3px;
+      padding: 8px;
+    }
+
+    .navbar.right span:hover {
+      background: #E9F6FC;
+    }
+
+    .vertical {
+      height: 40px;
+      width: 1px;
+      background: $ltGray;
+      display: inline-block;
+      position: absolute;
+      top: -9px;
+    }
+
+    .cart {
+      font-size: $font13;
+      display: inline;
+      margin-left: 22px;
+      position: absolute;
+      top: 14px;
+      right: 134px;
+    }
+
+      .cart img {
+        position: absolute;
+        top: -22px;
+        right: 4px;
+        width: 22px;
+        filter: grayscale(1);
+      }
+
+      .cart a {
+        color: #888888;
+        text-decoration: $textDec;
+      }
+
+      .cart a:hover {
+        color: #000;
+      }
+
+    .navbar.center {
+      margin: 30px 0 0 0;
+    }
+
+    .navbar.center ul {
+      margin-left: 147px;
+    }
+
+    .navbar.center ul li {
+      display: inline;
+      margin: 0 7px 0 7px;
+      font-size: $font14;
+      font-weight: lighter;
+    }
+
+    .navbar.center ul li a {
+      text-decoration: $textDec;
+      color: $grayColor;
+    }
+}
+
+//Left column side with side navigation 
+
+.columnLeft {
+  margin: 33px 0 0 0;
+  float: left;
+  color: #555555;
+}
+
+.leftHeading {
+  margin: 0 0 0 155px;
+}
+
+//Left side Top column styling 
+
+.leftSide.Top {
+  background: $whiteColor;
+  width: $sideBar;
+  margin: 8px 0 30px 155px;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 0 #CBCCC9;
+  ul {
+    padding: 1px 0 0 12px;
+  }
+  .heading5 {
+    margin: 0;
+  }
+    ul li {
+      list-style: none;
+      margin-left: 12px;
+        a {
+          text-decoration: $textDec;
+          color: $turqColor;
+          font-size: $font13;
+          line-height: $lineHeight;
+        }
+    }
+
+}
+
+//Left side bottom column styline
+
+.leftSide.Bottom {
+  background: $whiteColor;
+  width: $sideBar;
+  margin: 8px 0 0 155px;
+  padding-bottom: 20px;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 0 #CBCCC9;
+    a {
+      text-decoration: $textDec;
+      color: $turqColor;
+      font-size: $font13;
+      line-height: $lineHeight;
+    }
+    .sideBottom {
+      padding: 13px 0 0 12px;
+      }
+    .heading5 {
+      margin: 0;
+    }
+.sideLine {
+      width: 218px;
+      margin: 18px 0;
+      border-top: 0.5px solid $ltGray;
+    }
+      .radioItems {
+        font-size: $font13;
+        color: $turqColor;
+        }
+         label {
+            cursor: pointer;
+            position: relative;
+            padding-left: 6px;
+            margin-right: 15px;
+            font-size: 13px;
+            }
+          label:hover {
+            text-decoration: underline;
+            }
+      .priceBox {
+        width: 72px;
+        height: 34px;
+        border: 1px solid $ltGray;
+        border-radius: 3px;
+      }
+      .priceBtn {
+        width: 38px;
+        height: 38px;
+        border: 1px solid $ltGray;
+        border-radius: 3px;
+        background: $whiteColor;
+        position: absolute;
+        left: 352px;
+        padding: 0;
+      }
+        .priceBtn:after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 7px 0 7px 7px;
+          border-color: transparent transparent transparent #555555;
+          position: absolute;
+          top: 11px;
+          left: 15px;
+        }
+      .btnColor {
+        width: 21px;
+        height: 22px;
+        border: 1px solid $ltGray;
+        border-radius: 3px;
+      }
+        .btnColor.red {
+          background: #F70029;
+        }
+        .btnColor.orange {
+          background: #FF7F00;
+        }
+        .btnColor.yellow {
+          background: #F3CC09;
+        }
+        .btnColor.green {
+          background: #08C209;
+        }
+        .btnColor.skyblue {
+          background: #0ACCF3;
+        }
+        .btnColor.purple {
+          background: #A60AF3;
+        }
+        .btnColor.black {
+          background: #000000;
+        }
+        .btnColor.white {
+          background: #FFFFFF;
+        }
+      .order span {
+        color: $turqColor;
+        font-size: $font13;
+        padding-left: 6px;
+        cursor: pointer;
+      }
+        .order span:hover {
+          text-decoration: underline;
+        }
+      .shopLoc span {
+        color: $turqColor;
+        font-size: $font13;
+        padding-left: 6px;
+      }
+      .shopLoc span {
+            cursor: pointer;
+            font-size: 13px;
+            }
+        .shopLoc span:hover,
+        .shopLoc a:hover {
+          text-decoration: underline;
+          }
+      .shipTo {
+        background: $whiteColor;
+        width: 226px;
+        height: 30px;
+        border: 1px solid $ltGray;
+      }
+}
+
+
+
+//Main portion of the page. Listing with pics, titles, prices
+
+
+.container {
+  margin: 59px 0 42px 25px;
+  float: left;
+  width: 66%;
+}
+
+  .catPara {
+    float: left;
+  }
+.itemList {
+  display: inline-block;
+  width: 26%;
+  margin: 0 13px 15px 0;
+  padding-bottom: 6px;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+  background: $whiteColor;
+  position: relative;
+}
+
+.title,
+.shop,
+.pricing {
+  padding: 0 5px 3px 5px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.imageTag img {
+  width: 100%;
+  position: relative;
+}
+
+.shopDetails {
+  background: #fff;
+}
+
+.title p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 214px;
+  font-size: $font14;
+  color: #606060;
+  margin: 0;
+}
+
+.shop p {
+  margin: 0;
+  background: #fff;
+}
+
+.shop p a {
+  font-size: $font12;
+  color: #AAAAAA;
+  float: left;
+  margin: 3px 0 0 0;
+  text-decoration: $textDec;
+}
+
+.pricing p {
+  font-size: $font12;
+  color: #78C042;
+  float: right;
+  margin: 0;
+}
+
+.icons {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: none;
+}
+
+.icons img {
+  width: 14px;
+  padding: 6px;
+  display: inline;
+  background: $whiteColor;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+}
+
+
+.icons a:hover img {
+  background: #F5F5F1;
+}
+
+//Here starts the footer section of different pages
+
+footer {
+  width: 100%;
+  margin-top: 40px;
+}
+  p {
+    margin-left: 515px;
+    font-size: 13px;
+    color: $grayColor;
+  }
+    a {
+      text-decoration: none;
+      color: $turqColor;
+    }
+
+  footer .footArea ul {
+    margin-left: 442px;
+
+  }
+  
+  footer .footArea ul li {
+    display: inline;
+    text-decoration: $textDec;
+    border: 1px solid $ltGray;
+    border-radius: 3px;
+    padding: 11px;
+    float: left;
+    background: $whiteColor;
+    color: #555555;
+    font-weight: bold;
+  } 
+    footer .footArea ul .selected {
+      background: #F5F5F1;
+    }
+  
+
+
+
+
+
+
